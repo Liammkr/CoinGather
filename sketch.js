@@ -242,24 +242,24 @@ function setup() {
   if(coinCost == null){
     coinCost = 200;
   }
-  button1=createImg("https://coingathergame.liamrubin2.repl.co/Play.png","Play").position(x + 175,y + 150).size(50,50).mousePressed(gameStart);
-  button2 = createImg("https://coingathergame.liamrubin2.repl.co/Menu_Shop.png","shop").position(x + 20,y + 300).size(30,30).mousePressed(clicked2);
-  button4 = createImg("https://coingathergame.liamrubin2.repl.co/Back.png","back").position(x + 10,y + 10).size(20,20).mousePressed(back1);
+  button1=createImg("Play.png","Play").position(x + 175,y + 150).size(50,50).mousePressed(gameStart);
+  button2 = createImg("Menu_Shop.png","shop").position(x + 20,y + 300).size(30,30).mousePressed(clicked2);
+  button4 = createImg("Back.png","back").position(x + 10,y + 10).size(20,20).mousePressed(back1);
   button3 = createButton("Buy").position(x + 40,y + 110).size(75,20).mousePressed(buy);
-  button5 = createImg("https://coingathergame.liamrubin2.repl.co/LeaderBoard1.png","LeaderBoard").size(30,30).position(x+360,y+300).mousePressed(leaderBoardPress)
-  button6 = createImg("https://coingathergame.liamrubin2.repl.co/Menu_Img.png","go back to menu").position(x+10,y+10).size(30,30).mousePressed(menuGoBack);
-  button7 = createImg("https://coingathergame.liamrubin2.repl.co/Shield-2.png","shield").position(x+30,y+320).size(30,30).mousePressed(shieldActivate);
+  button5 = createImg("LeaderBoard1.png","LeaderBoard").size(30,30).position(x+360,y+300).mousePressed(leaderBoardPress)
+  button6 = createImg("Menu_Img.png","go back to menu").position(x+10,y+10).size(30,30).mousePressed(menuGoBack);
+  button7 = createImg("Shield-2.png","shield").position(x+30,y+320).size(30,30).mousePressed(shieldActivate);
   button8 = createInput(userName).position(x+115,y+300);
-  button9 = createImg("https://coingathergame.liamrubin2.repl.co/Settings.png","settings").position(x + 10,y + 10).size(30,30).mousePressed(openSettings);
+  button9 = createImg("Settings.png","settings").position(x + 10,y + 10).size(30,30).mousePressed(openSettings);
   button10 = createSlider(1,30,settingsMove).position(x + 100,y + 150);
   button13 = createSlider(1,30,settingsCarMove).position(x + 100,y + 250);
   button11 = createButton("Buy").position(x + 200,y + 110).size(75,20).mousePressed(buy1);
   button12 = createButton("Submit Score").position(x + 150,y + 325).size(100,50).mousePressed(submitScore);
   button14 = createButton("Buy").position(x + 40, y + 280).size(75,20).mousePressed(buy3);
-  behind1 = createImg("https://coingathergame.liamrubin2.repl.co/PurpleImg.png","left").position(0,0).size(x,windowHeight)
-  behind2 = createImg("https://coingathergame.liamrubin2.repl.co/PurpleImg.png","left").position(x,0).size(width,y)
-  behind3 = createImg("https://coingathergame.liamrubin2.repl.co/PurpleImg.png","left").position(x,y+height).size(width,y)
-  behind4 = createImg("https://coingathergame.liamrubin2.repl.co/PurpleImg.png","left").position(x+width,0).size(x,windowHeight)
+  behind1 = createImg("PurpleImg.png","left").position(0,0).size(x,windowHeight)
+  behind2 = createImg("PurpleImg.png","left").position(x,0).size(width,y)
+  behind3 = createImg("PurpleImg.png","left").position(x,y+height).size(width,y)
+  behind4 = createImg("PurpleImg.png","left").position(x+width,0).size(x,windowHeight)
   button11.hide();
   button12.hide();
   button13.hide();
@@ -409,11 +409,11 @@ function preload(){
   heart[1] = loadImage("https://coingathergame.liamrubin2.repl.co/Heart1.png");
   heart[0] = loadImage("https://coingathergame.liamrubin2.repl.co/Heart0.png");
   sky1 = loadImage("https://coingathergame.liamrubin2.repl.co/Sky2.png");
-  coinSound = loadSound("https://coingathergame.liamrubin2.repl.co/CoinSound.wav")
-  shieldSound = loadSound("https://coingathergame.liamrubin2.repl.co/ShieldUse.wav");
-  buySound = loadSound("https://coingathergame.liamrubin2.repl.co/BuyingSound.wav");
-  deathSound = loadSound("https://coingathergame.liamrubin2.repl.co/DeathSound.wav");
-  lootBox1Img = loadImage("https://coingathergame.liamrubin2.repl.co/CommonBox.png");
+  coinSound = loadSound("CoinSound.wav")
+  shieldSound = loadSound("ShieldUse.wav");
+  buySound = loadSound("BuyingSound.wav");
+  deathSound = loadSound("DeathSound.wav");
+  lootBox1Img = loadImage("CommonBox.png");
 }
 function draw() {
   oldscore1 = score1;
