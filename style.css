@@ -6,10 +6,13 @@ canvas {
   display: block;
 }
 button {
-  background-color: lightblue;
+  background-color: slategray;
   color: black;
+  border-radius: 5px;
 }
 input {
-  background-color: lightblue;
+  background-color: slategray;
   color: black;
+  border-color: black;
+  border-radius: 5px;
 }
