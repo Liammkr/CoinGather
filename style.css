@@ -5,14 +5,10 @@ html, body {
 canvas {
   display: block;
 }
-button {
-  background-color: slategray;
-  color: black;
-  border-radius: 5px;
-}
-input {
-  background-color: slategray;
-  color: black;
-  border-color: black;
-  border-radius: 5px;
+.embed-container iframe {
+position: absolute;
+top:0;
+left: 0;
+width: 100%;
+height: 100%;
 }
